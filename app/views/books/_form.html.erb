@@ -1,0 +1,47 @@
+<%= form_for(@book) do |f| %>
+  <% if @book.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+      <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<center>
+  <section id="registration-page" class="container">
+        <div class="control-group">
+          <div class="controls">
+           <%= f.label :YOurName %>
+           <%= f.text_field :name %>
+        
+           <%= f.label :type %>
+           <%= f.text_field :kind %>
+      
+            <%= f.label :country %>
+           <%= f.text_field :country %>
+
+            <%= f.label :state %>
+           <%= f.text_field :state %>
+
+           <%= f.label :district %>
+           <%= f.text_field :district %>
+   
+            <%= f.label :city %>
+           <%= f.text_field :city %>
+    
+           <%= f.label :mobile %>
+           <%= f.text_field :mobile %>
+           </div>
+          </div>
+          <div class="control-group">
+          <div class="controls">
+            <%= f.submit 'Donate the Book' %>
+          </div>
+        </div>
+  </section>
+  <!-- /#registration-page -->
+</center>
+<% end %>

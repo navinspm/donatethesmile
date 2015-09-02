@@ -1,0 +1,39 @@
+<center><p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dress.name %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @dress.quantity %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @dress.country %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @dress.state %>
+</p>
+
+<p>
+  <strong>District:</strong>
+  <%= @dress.district %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @dress.city %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @dress.mobile %>
+</p>
+</center>
+<%= link_to 'Edit', edit_dress_path(@dress) %> |
+<%= link_to 'Back', dresses_path %>

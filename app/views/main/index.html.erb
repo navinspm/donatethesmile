@@ -1,0 +1,291 @@
+
+<section class="main-info">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span9">
+                <h4>'Never worry about numbers. Help one person at a time and always start with the person nearest you.'</h4>
+                <p class="no-margin"> Mother Teresa</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Services-->
+<section id="services">
+    <div class="container">
+        <div class="center gap">
+            <h3>Available Now</h3>
+            <p class="lead">Please confirm the Donor by Phone before making any commitments</p>
+        </div>
+        <h1>Food</h1>
+        <div class="row-fluid">
+           <% @foods.each do |food| %>
+            <div class="span4">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="icon-globe icon-medium"></i>
+                    </div>
+                    <div class="media-body">
+                         <p>
+                              <strong>Name:</strong>
+                              <%= food.name %>
+                            </p>
+
+                            <p>
+                              <strong>Food:</strong>
+                              <%= food.food %>
+                            </p>
+
+                            <p>
+                              <strong>Expires:</strong>
+                              <%= food.expires %>
+                            </p>
+
+                            <p>
+                              <strong>Quantity:</strong>
+                              <%= food.quantity %>
+                            </p>
+
+                            <p>
+                              <strong>Country:</strong>
+                              <%= food.country %>
+                            </p>
+
+                            <p>
+                              <strong>State:</strong>
+                              <%= food.state %>
+                            </p>
+
+                            <p>
+                              <strong>District:</strong>
+                              <%= food.district %>
+                            </p>
+
+                            <p>
+                              <strong>City:</strong>
+                              <%= food.city %>
+                            </p>
+
+                            <p>
+                              <strong>Mobile:</strong>
+                              <%= food.mobile %>
+                            </p>
+                     </div>
+                </div>
+            </div> 
+        <% end %>           
+
+        <div class="gap"></div>
+         
+         <h1>Dress</h1>
+
+        <div class="row-fluid">
+        <% @dresses.each do |dress| %>
+            <div class="span4">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="icon-shopping-cart icon-medium"></i>
+                    </div>
+                    <div class="media-body">
+                     <p>
+                      <strong>Name:</strong>
+                      <%= dress.name %>
+                    </p>
+
+                    <p>
+                      <strong>Quantity:</strong>
+                      <%= dress.quantity %>
+                    </p>
+
+                    <p>
+                      <strong>Country:</strong>
+                      <%= dress.country %>
+                    </p>
+
+                    <p>
+                      <strong>State:</strong>
+                      <%= dress.state %>
+                    </p>
+
+                    <p>
+                      <strong>District:</strong>
+                      <%= dress.district %>
+                    </p>
+
+                    <p>
+                      <strong>City:</strong>
+                      <%= dress.city %>
+                    </p>
+
+                    <p>
+                      <strong>Mobile:</strong>
+                      <%= dress.mobile %>
+                    </p>
+                    </div>
+                </div>
+            </div>            
+         <% end %>
+
+          <div class="gap"></div>
+
+         <h1>Books</h1>
+
+         <div class="row-fluid">
+            <div class="span4">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="icon-shopping-cart icon-medium"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Ecommerce Solution</h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </div>
+            </div>            
+
+            <div class="span4">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="icon-globe icon-medium"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">SEO &amp; Solution</h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </div>
+            </div>            
+
+            <div class="span4">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="icon-globe icon-medium"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Bootstrap</h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+    </div>
+</section>
+<!--/Services-->
+
+<section id="recent-works">
+    <div class="container">
+        <div class="center">
+            <h3>Donate Directly To Organizations</h3>
+        </div>  
+        <div class="gap"></div>
+        <ul class="gallery col-4">
+            <!--Item 1-->
+            <li>
+                <div class="desc">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                </div>
+                <div id="modal-1" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/item1.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+            <!--/Item 1--> 
+        </ul>
+    </div>
+
+</section>
+
+<section id="clients" class="main">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span2">
+                <div class="clearfix">
+                    <h4 class="pull-left">Like Us</h4>
+                </div>
+                <p>Some Of The Non Profitable Organizations That helps people, Please support them too</p>
+            </div>
+            <div class="span10">
+                <div id="myCarousel" class="carousel slide clients">
+                  <!-- Carousel items -->
+                  <div class="carousel-inner">
+                    <div class="active item">
+                        <div class="row-fluid">
+                            <ul class="thumbnails">
+                                <li class="span3"><a href="#"><img src="images/sample/clients/client1.png"></a></li>
+                                <li class="span3"><a href="#"><img src="images/sample/clients/client2.png"></a></li>
+                                <li class="span3"><a href="#"><img src="images/sample/clients/client3.png"></a></li>
+                                <li class="span3"><a href="#"><img src="images/sample/clients/client4.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+
+<!--  Login form -->
+<div class="modal hide fade in" id="loginForm" aria-hidden="false">
+    <div class="modal-header">
+        <i class="icon-remove" data-dismiss="modal" aria-hidden="true"></i>
+        <h4>Login Form</h4>
+    </div>
+    <!--Modal Body-->
+    <div class="modal-body">
+        <form class="form-inline" action="index.html" method="post" id="form-login">
+            <input type="text" class="input-small" placeholder="Email">
+            <input type="password" class="input-small" placeholder="Password">
+            <label class="checkbox">
+                <input type="checkbox"> Remember me
+            </label>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+        <a href="#">Forgot your password?</a>
+    </div>
+    <!--/Modal Body-->
+</div>
+<!--  /Login form -->
+
+
+<!-- SL Slider -->
+<script type="text/javascript"> 
+$(function() {
+    var Page = (function() {
+
+        var $navArrows = $( '#nav-arrows' ),
+        slitslider = $( '#slider' ).slitslider( {
+            autoplay : true
+        } ),
+
+        init = function() {
+            initEvents();
+        },
+        initEvents = function() {
+            $navArrows.children( ':last' ).on( 'click', function() {
+                slitslider.next();
+                return false;
+            });
+
+            $navArrows.children( ':first' ).on( 'click', function() {
+                slitslider.previous();
+                return false;
+            });
+        };
+
+        return { init : init };
+
+    })();
+
+    Page.init();
+});
+</script>
+<!-- /SL Slider -->
+</body>
+</html>

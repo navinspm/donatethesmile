@@ -1,0 +1,50 @@
+<%= form_for(@food) do |f| %>
+  <% if @food.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@food.errors.count, "error") %> prohibited this food from being saved:</h2>
+      <ul>
+      <% @food.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <!-- / .title -->       
+<center>
+  <section id="registration-page" class="container">
+        <div class="control-group">
+          <div class="controls">
+            <%= f.label :YourName %>
+            <%= f.text_field :name %>
+        
+              <%= f.label :food %>
+             <%= f.text_field :food %>
+
+            <%= f.label :expires %>
+            <%= f.text_field :expires %>
+      
+            <%= f.label :country %>
+           <%= f.text_field :country %>
+
+           <%= f.label :state %>
+           <%= f.text_field :state %>
+
+           <%= f.label :district %>
+           <%= f.text_field :district %>
+   
+            <%= f.label :city %>
+           <%= f.text_field :city %>
+    
+           <%= f.label :mobile %>
+           <%= f.text_field :mobile %>
+           </div>
+          </div>
+          <div class="control-group">
+          <div class="controls">
+            <%= f.submit 'Donate the Food' %>
+          </div>
+        </div>
+  </section>
+  <!-- /#registration-page -->
+</center>
+  <% end %>
